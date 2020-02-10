@@ -1,0 +1,70 @@
+version: '3'
+
+services:
+  #HDFS
+  eagle1:
+    container_name: eagle1
+    image: babbleshack/eagle:james
+    hostname: eagle1
+    restart: unless-stopped
+    command: "/bin/sleep infinity"
+    networks:
+      - eagle-net
+    ports:
+      - 33967:33967
+      - 36497:36597
+      - 33333:33333
+      - 60501:60501
+      - 20501:20501
+      - 22262:22262
+      - 20502:20502
+      - 20503:20503
+      - 34457:34457
+      - 20507:20507
+      - 56640:56640
+
+
+  eagle2:
+    container_name: eagle2
+    image: babbleshack/eagle:james
+    hostname: eagle2
+    restart: unless-stopped
+    command: "/bin/sleep infinity"
+    networks:
+      - eagle-net
+    ports:
+      - 33967:33967
+      - 36497:36597
+      - 33333:33333
+      - 60501:60501
+      - 20501:20501
+      - 22262:22262
+      - 20502:20502
+      - 20503:20503
+      - 34457:34457
+      - 20507:20507
+      - 56640:56640
+
+  eagle3:
+    container_name: eagle3
+    image: babbleshack/eagle:james
+    hostname: eagle3
+    restart: unless-stopped
+    command: "/bin/sleep infinity"
+    networks:
+      - eagle-net
+    ports:
+      - 33967:33967
+      - 36497:36597
+      - 33333:33333
+      - 60501:60501
+      - 20501:20501
+      - 22262:22262
+      - 20502:20502
+      - 20503:20503
+      - 34457:34457
+      - 20507:20507
+      - 56640:56640
+
+networks:
+  eagle-net:
